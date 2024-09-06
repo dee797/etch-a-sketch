@@ -1,11 +1,28 @@
 @charset "utf-8";
 
+body {
+    margin: 0px;
+    padding: 8px;
+    box-sizing: border-box;
+    min-width: 100vw;
+    max-height: 100vh;
+}
+
+div.container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px auto;
+    height: 80vh;
+    width: 60vw;
+    border: 2px solid black;
+}
+
 div.row {
     display: flex;
-
+    width: 100%;
 }
 
 div.column {
-    aspect-ratio: 1/1;
     flex-grow: 1;
+    min-height: 1px;
 }
