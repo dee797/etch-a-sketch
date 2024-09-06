@@ -15,6 +15,10 @@ function createDivGrid() {
             divRow.appendChild(divColumn);
         }
     }
+
+    const changeGridBtn = document.createElement("button");
+    changeGridBtn.textContent = "Change grid area"; 
+    document.body.insertBefore(changeGridBtn, container);
 }
 
 createDivGrid();
