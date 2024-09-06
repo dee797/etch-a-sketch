@@ -1,19 +1,21 @@
 @charset "utf-8";
 
 body {
+    display: flex;
+    flex-direction: column;
     margin: 0px;
     padding: 8px;
     box-sizing: border-box;
     min-width: 100vw;
     max-height: 100vh;
+    align-items: center;
 }
 
 div.container {
     display: flex;
     flex-wrap: wrap;
-    margin: 0px auto;
-    height: 80vh;
-    width: 60vw;
+    height: 35vw;
+    width: 35vw;
     border: 2px solid black;
 }
 
@@ -25,4 +27,11 @@ div.row {
 div.column {
     flex-grow: 1;
     min-height: 1px;
+    aspect-ratio: 1/1;
+}
+
+button {
+    cursor: pointer;
+    margin: 10px 0px 18px;
+    padding: 10px 10px;
 }
