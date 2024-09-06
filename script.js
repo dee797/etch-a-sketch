@@ -11,6 +11,9 @@ function createDivGrid() {
             const divColumn = document.createElement("div");
             divColumn.classList.add("column");
             divColumn.innerText = `\u00A0`;
+            divColumn.addEventListener("mouseover", () =>{
+                divColumn.style.backgroundColor = "blue";
+            }) ;
             divRow.appendChild(divColumn);
         }
     }
