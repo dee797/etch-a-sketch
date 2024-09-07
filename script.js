@@ -9,8 +9,18 @@ function addDivs(dimensions) {
         for (let i = 0; i < dimensions; i++) {
             const divColumn = document.createElement("div");
             divColumn.classList.add("column");
+
             divColumn.addEventListener("mouseover", () =>{
+
                 divColumn.style.backgroundColor = "blue";
+                let opacity = divColumn.style.opacity 
+
+                if (opacity === "") divColumn.style.opacity = 0.1;
+                else if (parseFloat(opacity) < 1) {
+                    let temp = parseFloat(opacity);
+                    temp += 0.1;
+                    divColumn.style.opacity = temp;
+                }
             }) ;
             divRow.appendChild(divColumn);
         }
