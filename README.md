@@ -1,1 +1,2 @@
-# etch-a-sketch
+Play Etch-a-Sketch by hovering your mouse anywhere over the grid.
+You can also change the grid area by clicking the button 'change grid area', which will prompt you to enter a new value for the length/width of the grid.  
